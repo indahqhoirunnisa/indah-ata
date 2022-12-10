@@ -1,7 +1,7 @@
 {{-- sidebar --}}
 <div class="bg-gray-50 z-50 fixed">
     <div class="overflow-y-hidden overflow-x-hidden h-screen z-20 scrolling-touch fixed top-0 md:left-0 -left-64 flex flex-row bg-gray-100 text-gray-800 bg-[#2C3639]">
-        <aside class="sidebar h-screen w-64 md:shadow transform -translate-x-full md:translate-x-0 transition-transform duration-150 ease-in bg-[#D3E4CD]">
+        <aside class="sidebar h-screen w-64 md:shadow transform -translate-x-full md:translate-x-0 transition-transform duration-150 ease-in bg-[#DEBACE]">
             <div class="flex flex-col items-center mt-6 -mx-2">
                 <img class="object-cover w-24 h-24 mx-2 rounded-full" src="{{ asset('image/obj.png') }}" alt="">
                 <h4 class="mx-2 mt-2 font-medium text-[#205375] hover:underline">{{ Auth::user()->name }}</h4>
@@ -64,9 +64,6 @@
                         <span class="ml-3">Retur Pengembalian</span>
                         </a>
                     </li>
-                    <li class="my-px">
-                        <span class="flex font-medium text-sm text-gray-900 px-4 my-4 uppercase">Laporan</span>
-                    </li>
                     <button type="button" class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 {{ Request::is('admin/laporan') ? 'bg-gray-100' : '' }}" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                         <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
                             <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/></svg>
@@ -91,7 +88,7 @@
     </div>
 
     <div class="fixed w-full">
-        <nav class="bg-[#D3E4CD] md:ml-64 py-4 px-3">
+        <nav class="bg-[#DEBACE] md:ml-64 py-4 px-3">
             <div class="container max-w-full mx-auto flex items-center justify-between md:pr-8 md:pl-10">
                 <div class="flex justify-between items-center w-full">
                     <button class="text-white">
