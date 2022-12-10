@@ -39,7 +39,7 @@ class AdminProdukController extends Controller
         if($request->hasFile('gambar')){
             $file = $request->file('gambar');
             $filename = rand() . $file->getClientOriginalName();
-            $file->move(public_path() . 'image/produk', $filename);
+            $file->move(public_path() . '/image/produk', $filename);
             $data = $filename;
             $produk->gambar = $data;
             $produk->save();

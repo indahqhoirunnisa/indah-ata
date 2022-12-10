@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Retur;
 use App\Models\Pesanan;
 use App\Models\Keranjang;
-use App\Models\Pembayaran;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\Api\MidtransController;
+use App\Models\Pembayaran;
+use App\Models\Retur;
 
 class PesananController extends Controller
 {
@@ -83,7 +82,7 @@ class PesananController extends Controller
         $retur->keterangan = $request->alasan;
         if($request->hasFile('gambar')){
             $filename = rand() . $request->file('gambar')->getClientOriginalName();
-            Storage::put('/image/retur/'.$filename, $request->file('gambar'));
+            $request->file('gambar')->move(public_path() . '/image/retur', $filename);
             $retur->bukti = $filename;
             $retur->save();
             return redirect()->route('riwayat');
