@@ -3,9 +3,9 @@
     <div class="overflow-y-hidden overflow-x-hidden h-screen z-20 scrolling-touch fixed top-0 md:left-0 -left-64 flex flex-row bg-gray-100 text-gray-800 bg-[#2C3639]">
         <aside class="sidebar h-screen w-64 md:shadow transform -translate-x-full md:translate-x-0 transition-transform duration-150 ease-in bg-[#D3E4CD]">
             <div class="flex flex-col items-center mt-6 -mx-2">
-                <img class="object-cover w-24 h-8 mx-2 rounded-full" src="{{ asset('image/obj.png') }}" alt="">
+                <img class="object-cover w-24 h-24 mx-2 rounded-full" src="{{ asset('image/obj.png') }}" alt="">
                 <h4 class="mx-2 mt-2 font-medium text-[#205375] hover:underline">{{ Auth::user()->name }}</h4>
-                <p class="mx-2 mt-1 text-sm font-medium text-gray-500 hover:underline">{{ Auth::user()->email }}</p>
+                <p class="mx-2 text-sm font-medium text-gray-500 hover:underline">{{ Auth::user()->email }}</p>
             </div>
             <div class="sidebar-content px-4 py-6">
                 <ul class="flex flex-col w-full h-screen">
