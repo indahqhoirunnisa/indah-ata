@@ -22,7 +22,7 @@
             <thead class="text-xs text-white uppercase bg-[#99A799]">
                 <tr>
                     <th scope="col" class="py-2 px-4">
-                        Id Produk
+                        No
                     </th>
                     <th scope="col" class="py-2 px-4">
                         Nama Produk
