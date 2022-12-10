@@ -66,7 +66,7 @@
                         </div>
                         <div> 
                             <div class="font-semibold text-xl">Intan Tani</div>    
-                            <div>Alamate</div>
+                            <div>Gabelan Kidul Rt02/05, Tegalharjo, Eromoko, Wonogiri, Jawa Tengah</div>
                             <div class="text-sm">{{ Carbon\Carbon::parse($pembayaran->tgl_bayar)->format('d M Y') }}</div>
                         </div>
                     </div>
