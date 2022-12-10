@@ -42,9 +42,6 @@
                         </a>
                     </li>
                     <li class="my-px">
-                        <span class="flex font-medium text-sm text-gray-900 px-4 my-4 uppercase ">Pemesanan</span>
-                    </li>
-                    <li class="my-px">
                         <a href="{{ route('admin.pesanan') }}" class="flex flex-row items-center h-10 px-3 text-gray-700 hover:bg-gray-100"><span class="flex items-center justify-center text-lg text-gray-500"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6"> <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
                             <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/></svg></span>
                         <span class="ml-3">Pesanan</span>
@@ -76,7 +73,7 @@
                         <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Laporan</span>
                         <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     </button>
-                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                    <ul id="dropdown-example" class="hidden py-2 ">
                         <li>
                             <a href="{{ route('admin.laporan.produk') }}" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 transition duration-75 group hover:bg-gray-100">Produk</a>
                         </li>
