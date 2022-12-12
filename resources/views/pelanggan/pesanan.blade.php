@@ -157,8 +157,8 @@
 
 @if (Session::has('token'))
 <script type="text/javascript"
-src="https://app.sandbox.midtrans.com/snap/snap.js"
-data-client-key="SB-Mid-client-Q8Ct8Ptiq4d-rC6K"></script>
+src="https://app.midtrans.com/snap/snap.js"
+data-client-key="Mid-client-a_WaNKuoPeCxTDEz"></script>
 
 <form action="{{ route('bayar.simpan') }}" method="post" id="form-bayar">
     @csrf
