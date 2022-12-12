@@ -108,7 +108,7 @@
                                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
                                     {{ $item->jumlah }}
                                     @php
-                                        $total += (int) $item->produk->harga * (int) $item->jumlah
+                                        $total += (int) $item->produk->harga * ((int) $item->jumlah * (int) $item->produk->berat)
                                     @endphp
                                 </th>
                                 

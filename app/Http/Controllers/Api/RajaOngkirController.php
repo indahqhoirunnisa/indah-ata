@@ -49,7 +49,7 @@ class RajaOngkirController extends Controller
                     'form_params' => [
                         'origin' => '497',
                         'destination' => $alamat->kota_id,
-                        'weight' => '1000',
+                        'weight' => $request->berat,
                         'courier' => $request->kurir
                     ]
                 ]);
