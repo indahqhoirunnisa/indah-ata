@@ -10,13 +10,13 @@ class MidtransController extends Controller
     public static function config($order_id, $total)
     {
         // Set your Merchant Server Key
-        \Midtrans\Config::$serverKey = 'SB-Mid-server-n3Kv_GSRwnHdranX55_MBrHN';
+        \Midtrans\Config::$serverKey = 'Mid-server-2-mKP0FFR6zO9GEOUTEFb8TM';
         // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
-        \Midtrans\Config::$isProduction = false;
+        \Midtrans\Config::$isProduction = true;
         // Set sanitization on (default)
-        \Midtrans\Config::$isSanitized = FALSE;
+        \Midtrans\Config::$isSanitized = true;
         // Set 3DS transaction for credit card to true
-        \Midtrans\Config::$is3ds = FALSE;
+        \Midtrans\Config::$is3ds = true;
 
         $params = array(
             'transaction_details' => array(
