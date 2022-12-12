@@ -6,6 +6,7 @@ use App\Models\Produk;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Pembayaran;
+use App\Models\Retur;
 
 class AdminLaporanController extends Controller
 {
@@ -22,6 +23,11 @@ class AdminLaporanController extends Controller
             $bayar[] = Pembayaran::where('order_id', $item->order_id)->latest()->first();
         }
         return view('admin.laporan.transaksi', compact('bayar'));
-        return $bayar;
+    }
+
+    public function retur()
+    {
+        $retur = Retur::all();
+        return view('admin.laporan.retur', compact('retur'));
     }
 }
