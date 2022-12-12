@@ -63,7 +63,7 @@
                         @endif
                     </td>
                     <td class="py-2 px-3">
-                        <a href="{{ route('admin.pesanan.detail', ['id' => $item->id]) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mr-2 mb-2">Dikirim</a>
+                        <a href="{{ route('admin.pesanan.detail', ['id' => $item->pesanan->id]) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mr-2 mb-2">Dikirim</a>
                     </td>
                 </tr>
                 @php
