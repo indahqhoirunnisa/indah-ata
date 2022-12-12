@@ -88,7 +88,7 @@
             @endphp
             @endforeach
           </div>
-          <a href="{{ route('produk') }}" class="flex justify-center font-semibold px-8 py-2.5 bg-[#557153] text-white">
+          <a href="{{ route('produk') }}" class="flex justify-center font-semibold mt-4 px-4 py-2.5 bg-[#557153] text-white">
             Lanjutkan Belanja
           </a>
         </div>
