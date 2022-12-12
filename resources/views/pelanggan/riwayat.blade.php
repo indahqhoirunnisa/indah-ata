@@ -6,9 +6,6 @@
         <div class="text-2xl text-[#E2C2B9] font-bold">
             Table Pesanan
         </div>
-        <div>
-            <a href="{{ route('nota/{id}') }}" class="py-2.5 px-5 bg-[#99A799] text-white">Cetak Nota</a>
-        </div>
     </div>
     <div class="overflow-x-auto relative px-6">
         <table class="w-full text-sm text-left text-gray-500">

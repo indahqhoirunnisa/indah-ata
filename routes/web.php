@@ -48,14 +48,6 @@ Route::get('/tentang', function () {
     return view('tentang');
 })->name('tentang');
 
-Route::get('retur', function () {
-    return view('retur');
-})->name('retur');
-
-Route::get('pesananpelanggan', function () {
-    return view('admin.pesananpelanggan');
-})->name('pesananpelanggan');
-
 Route::get('pelanggan', function () {
     return view('admin.pelanggan');
 })->name('pelanggan');
