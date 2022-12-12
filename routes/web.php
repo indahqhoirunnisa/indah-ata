@@ -79,7 +79,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('pesanan/retur/{id}', [PesananController::class, 'retur'])->name('pesanan.retur');
     Route::post('pesanan/bayar', [PesananController::class, 'bayar'])->name('pesanan.bayar');
     Route::post('bayar/simpan', [PembayaranController::class, 'simpan'])->name('bayar.simpan');
-    Route::get('nota/{id}', [PembayaranController::class, 'nota'])->name('bayar.nota');
+    Route::get('nota/{id}', [PembayaranController::class, 'nota'])->name('nota');
     Route::post('retur/simpan', [PesananController::class, 'retur_simpan'])->name('retur.simpan');
 });
 
