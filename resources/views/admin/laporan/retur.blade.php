@@ -16,13 +16,13 @@
             <thead class="text-xs text-white uppercase bg-[#99A799]">
                 <tr>
                     <th scope="col" class="py-2 px-4">
+                        No
+                    </th>
+                    <th scope="col" class="py-2 px-4">
                         Id Pesanan
                     </th>
                     <th scope="col" class="py-2 px-4">
                         Nama Pemesan
-                    </th>
-                    <th scope="col" class="py-2 px-4">
-                        Alamat
                     </th>
                     <th scope="col" class="py-2 px-4">
                         Alasan
@@ -43,19 +43,16 @@
                         {{ $no++ }}
                     </th>
                     <th scope="row" class="py-1 px-2 font-medium text-gray-900 whitespace-nowrap">
-                        {{ $item->pesanan->produk->nama_produk }}
+                        {{ $item->pesanan->id }}
                     </th>
                     <td class="py-2 px-3">
-                        {{ $item->pesanan->produk->kategori }}
-                    </td>
-                    <td class="py-2 px-3 whitespace-nowrap">
-                        {{ Carbon\Carbon::parse($item->pesanan->produk->exp)->format('d-m-Y') }}
+                        {{ $item->pesanan->user->name }}
                     </td>
                     <td class="py-2 px-3">
-                        Rp{{ number_format($item->pesanan->produk->harga, 0, 0, '.') }}
+                        {{ $item->keterangan }}
                     </td>
                     <td class="py-2 px-3">
-                        {{ $item->pesanan->produk->stok }}
+                        {{ $item->status }}
                     </td>
                 </tr>
                 @php
