@@ -90,6 +90,7 @@
                         @php
                             $no = 1;
                             $total = 0;
+                            $berat = 0;
                         @endphp
                             @foreach($cart as $item)
                             <tr class="bg-white border-b ">
@@ -108,7 +109,8 @@
                                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
                                     {{ $item->jumlah }}
                                     @php
-                                        $total += (int) $item->produk->harga * ((int) $item->jumlah * (int) $item->produk->berat)
+                                        $total += (int) $item->produk->harga * (int) $item->jumlah;
+                                        $berat += (int) $item->produk->berat * (int) $item->jumlah;
                                     @endphp
                                 </th>
                                 
@@ -203,7 +205,8 @@ data-client-key="Mid-client-a_WaNKuoPeCxTDEz"></script>
             type: "POST",
             data: {
                 _token: "{{ csrf_token() }}",
-                kurir: value
+                kurir: value,
+                berat: "{{ $berat }}"
             },
             success: function(data){
                 console.log(data)
