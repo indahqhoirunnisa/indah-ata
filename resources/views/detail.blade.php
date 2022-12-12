@@ -53,7 +53,7 @@
             <form action="{{ route('cart.post') }}" method="post">
                 @csrf
                 <input type="hidden" name="produk_id" value="{{ $produk->id }}">
-                <input type="hidden" name="jumlah">
+                <input type="hidden" name="jumlah" value="1">
                 <button type="submit" class="bg-[#6D9886] mt-2 w-full py-2.5 px-2 rounded-md text-white">Tambah Keranjang</button>
             </form>
         </div>
