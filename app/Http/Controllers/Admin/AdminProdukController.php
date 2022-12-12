@@ -63,9 +63,9 @@ class AdminProdukController extends Controller
             $file->move(public_path() . '/image/produk', $filename);
             $data = $filename;
             $produk->gambar = $data;
-            $produk->save();
-            return redirect()->route('admin.produk');
         }
+        $produk->save();
+        return redirect()->route('admin.produk');
     }
 
     public function hapus($id)
