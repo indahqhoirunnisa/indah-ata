@@ -28,9 +28,6 @@ class PesananController extends Controller
     {
         $id = rand();
 
-        $token = MidtransController::config($id, $request->total);
-        return $token;
-
         $pesanan = new Pesanan();
         $pesanan->id = $id;
         $pesanan->id_user = auth()->user()->id;
