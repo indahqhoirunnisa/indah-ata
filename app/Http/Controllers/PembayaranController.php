@@ -18,7 +18,7 @@ class PembayaranController extends Controller
         $pembayaran->id_user = auth()->user()->id;
         $pembayaran->total_bayar = $json->gross_amount;
         $pembayaran->metode_bayar = $json->payment_type;
-        $pembayaran->pdf_url = $json->pdf_url;
+        $pembayaran->pdf_url = $json->pdf_url ?? null;
         $pembayaran->tgl_bayar = Carbon::parse($json->transaction_time)->format('Y-m-d');
         $pembayaran->status_pembayaran = $json->transaction_status;
         $pembayaran->save();

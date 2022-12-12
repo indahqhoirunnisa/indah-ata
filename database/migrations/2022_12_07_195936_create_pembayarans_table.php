@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreignId('id_user');
             $table->string('total_bayar');
             $table->string('metode_bayar');
-            $table->string('pdf_url');
+            $table->string('pdf_url')->nullable();
             $table->datetime('tgl_bayar');
             $table->string('status_pembayaran');
             $table->timestamps();
