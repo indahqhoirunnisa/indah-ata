@@ -7,7 +7,7 @@
             Table Pesanan
         </div>
         <div>
-            <a href="{{ route('pelanggan.nota/{id}') }}" class="py-2.5 px-5 bg-[#99A799] text-white">Cetak Nota</a>
+            <a href="{{ route('nota/{id}') }}" class="py-2.5 px-5 bg-[#99A799] text-white">Cetak Nota</a>
         </div>
     </div>
     <div class="overflow-x-auto relative px-6">
