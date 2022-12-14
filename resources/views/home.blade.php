@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<div class="w-full bg-white pt-24">
+<div class="w-full bg-white pt-16">
     <div class="flex justify-center space-x-8">
         <div class="flex space-x-4 float-center p-4 bg-white rounded-lg mt-8">
             <div class="mt-4">

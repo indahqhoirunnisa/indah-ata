@@ -66,6 +66,7 @@ Route::middleware(['auth'])->group(function(){
     Route::post('cart/tambah', [CartController::class, 'postKeranjang'])->name('cart.post');
     Route::get('cart/hapus/{id}', [CartController::class, 'hapus'])->name('cart.hapus');
     Route::get('riwayat', [PesananController::class, 'riwayat'])->name('riwayat');
+    Route::get('detailriwayat', [PesananController::class, 'riwayat'])->name('detailriwayat');
     Route::get('pesanan', [PesananController::class, 'index'])->name('pesanan');
     Route::get('pesanan/terima/{id}', [PesananController::class, 'terima'])->name('pesanan.terima');
     Route::get('pesanan/retur/{id}', [PesananController::class, 'retur'])->name('pesanan.retur');
