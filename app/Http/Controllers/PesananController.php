@@ -88,4 +88,10 @@ class PesananController extends Controller
             return redirect()->route('riwayat');
         }
     }
-}
+        public function detailriwayat($id)
+        {
+            $Pesanan = Pesanan::where('order_id', $id)->get();
+            return view('pelanggan.detailriwayat', compact('pesanan'));
+        }
+    }
+

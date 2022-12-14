@@ -83,8 +83,10 @@
                         <a href="{{ route('pesanan.retur', ['id' => $item->order_id]) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mr-2 mb-2">Retur</a>
                         @endif
                     </td>
-                    
-                </tr>
+                    <td class="py-2 px-3">
+                        <a href="{{ route('pelanggan.detailriwayat', ['id' => $item->order_id]) }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 mr-2 mb-2">Detail</a>
+                    </td>
+                    </tr>
                 @php
                     $no++;
                 @endphp
